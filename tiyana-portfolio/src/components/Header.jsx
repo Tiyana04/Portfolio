@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaLinkedin, FaEnvelope, FaInstagram } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaInstagram, FaFacebook } from 'react-icons/fa';
 
 const Header = () => {
   return (
@@ -17,6 +17,12 @@ const Header = () => {
           </a>
           <a href="mailto:tiyanaludowyke04@gmail.com" className="social-icon">
             <FaEnvelope size={24} />
+          </a>
+          <a href="https://www.instagram.com/_tiyana.l/ " className="social-icon" target="_blank" rel="noreferrer">
+            <FaInstagram size={24} />
+          </a>
+          <a href="https://web.facebook.com/profile.php?id=61556402108150" className="social-icon" target="_blank" rel="noreferrer">
+            <FaFacebook size={24} />
           </a>
         </div>
       </div>
