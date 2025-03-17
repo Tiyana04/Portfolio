@@ -11,7 +11,7 @@ const About = () => {
           <div className="about-text">
             <p>
               Hello! I'm a passionate Computer Science Undergraduate Student with expertise in building innovative solutions 
-              that solve real-world problems. I've worked on various projects ranging from web applications to mobile appilacations.
+              that solve real-world problems. I've worked on various projects ranging from web applications to mobile applications.
             </p> <br />
             <p>
               My approach to software development is centered around creating clean, maintainable code 

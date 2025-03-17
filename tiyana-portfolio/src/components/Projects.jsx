@@ -3,25 +3,67 @@ import React from 'react';
 const Projects = () => {
   const projectsData = [
     {
-      title: 'Student 360',
-      description: 'Built a full-stack e-commerce platform with React, Node.js, and MongoDB. Implemented features like user authentication, product search, shopping cart, and payment integration.',
-      image: '/assets/Student 360.jpg',
-      tags: ['Flutter', 'Node.js', 'MongoDB', 'Express'],
-      link: 'https://github.com/yourusername/ecommerce-platform'
+        title: 'Student 360',
+        description: 'Built a full-stack e-commerce platform with React, Node.js, and MongoDB. Implemented features like user authentication, product search, shopping cart, and payment integration.',
+        image: '/assets/Student 360.jpg',
+        tags: ['Flutter', 'Node.js', 'MongoDB', 'Express'],
+        link: 'https://github.com/yourusername/ecommerce-platform'
     },
     {
-      title: 'Real Estate Agent',
-      description: 'Developed an AI-powered content generator that creates blog posts, social media captions, and marketing copy. Utilized Python and OpenAI GPT-3 API for text generation.',
-      image: '/assets/Estate Agent.jpg',
-      tags: ['Python', 'Flask', 'OpenAI API', 'React', 'AWS'],
-      link: 'https://github.com/yourusername/ai-content-generator'
+        title: 'Real Estate Agent',
+        description: 'Developed an AI-powered content generator that creates blog posts, social media captions, and marketing copy. Utilized Python and OpenAI GPT-3 API for text generation.',
+        image: '/assets/Estate Agent.jpg',
+        tags: ['Python', 'Flask', 'OpenAI API', 'React', 'AWS'],
+        link: 'https://github.com/yourusername/ai-content-generator'
     },
     {
-      title: 'Green Steps',
-      description: 'Created a cross-platform mobile application for health monitoring. Features include step counting, heart rate monitoring, sleep tracking, and nutrition logging.',
-      image: '/assets/Green Steps.png',
-      tags: ['React Native', 'Firebase', 'Redux', 'HealthKit', 'Google Fit'],
-      link: 'https://github.com/yourusername/health-monitoring-app'
+        title: 'Green Steps',
+        description: 'Created a cross-platform mobile application for health monitoring. Features include step counting, heart rate monitoring, sleep tracking, and nutrition logging.',
+        image: '/assets/Green Steps.png',
+        tags: ['React Native', 'Firebase', 'Redux', 'HealthKit', 'Google Fit'],
+        link: 'https://github.com/yourusername/health-monitoring-app'
+    },
+    {
+        title: 'Real-Time Event Ticketing System',
+        description: 'Created a cross-platform mobile application for health monitoring. Features include step counting, heart rate monitoring, sleep tracking, and nutrition logging.',
+        image: '/assets/Ticketing System.png',
+        tags: ['React Native', 'Firebase', 'Redux', 'HealthKit', 'Google Fit'],
+        link: 'https://github.com/yourusername/health-monitoring-app'
+    },
+    {
+        title: 'Biography of Zendaya',
+        description: 'Created a cross-platform mobile application for health monitoring. Features include step counting, heart rate monitoring, sleep tracking, and nutrition logging.',
+        image: '/assets/Bio Zendaya.png',
+        tags: ['React Native', 'Firebase', 'Redux', 'HealthKit', 'Google Fit'],
+        link: 'https://github.com/yourusername/health-monitoring-app'
+    },
+    {
+        title: 'Scientific Research Data Management System',
+        description: 'Created a cross-platform mobile application for health monitoring. Features include step counting, heart rate monitoring, sleep tracking, and nutrition logging.',
+        image: '/assets/Research Data.jpg',
+        tags: ['React Native', 'Firebase', 'Redux', 'HealthKit', 'Google Fit'],
+        link: 'https://github.com/yourusername/health-monitoring-app'
+    },
+    {
+        title: 'Student Management System',
+        description: 'Created a cross-platform mobile application for health monitoring. Features include step counting, heart rate monitoring, sleep tracking, and nutrition logging.',
+        image: '/assets/Student Management.webp',
+        tags: ['React Native', 'Firebase', 'Redux', 'HealthKit', 'Google Fit'],
+        link: 'https://github.com/yourusername/health-monitoring-app'
+    },
+    {
+        title: 'OCEANAUTS Website',
+        description: 'Created a cross-platform mobile application for health monitoring. Features include step counting, heart rate monitoring, sleep tracking, and nutrition logging.',
+        image: '/assets/Oceanauts.png',
+        tags: ['React Native', 'Firebase', 'Redux', 'HealthKit', 'Google Fit'],
+        link: 'https://github.com/yourusername/health-monitoring-app'
+    },
+    {
+        title: 'Banking Transaction System',
+        description: 'Created a cross-platform mobile application for health monitoring. Features include step counting, heart rate monitoring, sleep tracking, and nutrition logging.',
+        image: '/assets/Banking Transaction.webp',
+        tags: ['React Native', 'Firebase', 'Redux', 'HealthKit', 'Google Fit'],
+        link: 'https://github.com/yourusername/health-monitoring-app'
     }
   ];
 
