@@ -1,6 +1,6 @@
 
 /* Navbar Styles */
-.navbar {
+/* .navbar {
   position: fixed;
   top: 0;
   left: 0;
@@ -82,7 +82,7 @@
   .navbar-menu li {
     margin: 20px 0;
   }
-}
+} */
 
 /* Header Styles */
 .header {
@@ -175,8 +175,9 @@
 
 .about-image img {
   max-width: 80%;
-  border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(26, 54, 93, 0.9);
+  /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9); */
 }
 
 /* Education Section */

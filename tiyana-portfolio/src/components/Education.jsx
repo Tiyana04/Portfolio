@@ -3,10 +3,10 @@ import React from 'react';
 const Education = () => {
   const educationData = [
     {
-      degree: 'Master of Science in Computer Science',
-      institution: 'University Name',
-      location: 'City, Country',
-      duration: '2018 - 2020',
+      degree: 'BSc(Hons) Computer Science',
+      institution: 'Informatics Institue of Technology',
+      location: 'Colombo, Sri Lanka',
+      duration: '2024 - Present',
       description: 'Specialized in Artificial Intelligence and Machine Learning. Graduated with distinction.'
     },
     {
