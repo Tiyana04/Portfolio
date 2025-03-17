@@ -12,14 +12,14 @@ const Projects = () => {
     {
       title: 'Real Estate Agent',
       description: 'Developed an AI-powered content generator that creates blog posts, social media captions, and marketing copy. Utilized Python and OpenAI GPT-3 API for text generation.',
-      image: '/assets/images/project2.jpg',
+      image: '/assets/Estate Agent.jpg',
       tags: ['Python', 'Flask', 'OpenAI API', 'React', 'AWS'],
       link: 'https://github.com/yourusername/ai-content-generator'
     },
     {
-      title: 'Health Monitoring App',
+      title: 'Green Steps',
       description: 'Created a cross-platform mobile application for health monitoring. Features include step counting, heart rate monitoring, sleep tracking, and nutrition logging.',
-      image: '/assets/images/project3.jpg',
+      image: '/assets/Green Steps.png',
       tags: ['React Native', 'Firebase', 'Redux', 'HealthKit', 'Google Fit'],
       link: 'https://github.com/yourusername/health-monitoring-app'
     }
