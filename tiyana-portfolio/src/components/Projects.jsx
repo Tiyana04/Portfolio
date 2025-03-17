@@ -3,14 +3,14 @@ import React from 'react';
 const Projects = () => {
   const projectsData = [
     {
-      title: 'E-commerce Platform',
+      title: 'Student 360',
       description: 'Built a full-stack e-commerce platform with React, Node.js, and MongoDB. Implemented features like user authentication, product search, shopping cart, and payment integration.',
-      image: '/assets/images/project1.jpg',
-      tags: ['React', 'Node.js', 'MongoDB', 'Express', 'Redux'],
+      image: '/assets/Student 360.jpg',
+      tags: ['Flutter', 'Node.js', 'MongoDB', 'Express'],
       link: 'https://github.com/yourusername/ecommerce-platform'
     },
     {
-      title: 'AI Content Generator',
+      title: 'Real Estate Agent',
       description: 'Developed an AI-powered content generator that creates blog posts, social media captions, and marketing copy. Utilized Python and OpenAI GPT-3 API for text generation.',
       image: '/assets/images/project2.jpg',
       tags: ['Python', 'Flask', 'OpenAI API', 'React', 'AWS'],
