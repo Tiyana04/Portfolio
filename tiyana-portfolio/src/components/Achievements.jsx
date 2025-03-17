@@ -1,25 +1,43 @@
 import React from 'react';
-import { Award } from 'lucide-react';
-import achievements from '../data/achievements';
 
-function Achievements() {
+const Achievements = () => {
+  const achievementsData = [
+    {
+      title: 'Best Innovative Solution Award',
+      organization: 'Tech Conference 2023',
+      description: 'Received award for developing an innovative AI-powered solution that increased productivity by 40%.',
+      image: '/assets/images/achievement1.jpg'
+    },
+    {
+      title: 'Open Source Contributor',
+      organization: 'GitHub',
+      description: 'Contributed to several major open-source projects with over 1000+ stars and 200+ forks.',
+      image: '/assets/images/achievement1.jpg'
+    },
+    {
+      title: 'Certified Cloud Architect',
+      organization: 'AWS',
+      description: 'Earned AWS Certified Solutions Architect - Professional certification with a 95% score.',
+      image: '/assets/images/achievement1.jpg'
+    }
+  ];
+
   return (
-    <section className="py-20 bg-gradient-to-b from-gray-50 to-gray-100">
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-center mb-12">
-          <Award size={28} className="text-blue-600 mr-3" />
-          <h2 className="text-4xl font-bold gradient-text">Achievements</h2>
+    <section className="achievements" id="achievements">
+      <div className="container">
+        <div className="section-title">
+          <h2>Achievements</h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          {achievements.map((achievement, index) => (
-            <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-[1.02] transition-transform duration-300">
-              <div className="relative h-64">
-                <img src={achievement.image} alt={achievement.title} className="w-full h-full object-cover" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
-                <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                  <h3 className="text-2xl font-bold mb-2">{achievement.title}</h3>
-                  <p className="text-gray-200">{achievement.description}</p>
-                </div>
+        <div className="achievements-slider">
+          {achievementsData.map((achievement, index) => (
+            <div className="achievement-item" key={index}>
+              <div className="achievement-image">
+                <img src={achievement.image} alt={achievement.title} />
+              </div>
+              <div className="achievement-info">
+                <h3>{achievement.title}</h3>
+                <p className="organization">{achievement.organization}</p>
+                <p>{achievement.description}</p>
               </div>
             </div>
           ))}
@@ -27,6 +45,6 @@ function Achievements() {
       </div>
     </section>
   );
-}
+};
 
 export default Achievements;

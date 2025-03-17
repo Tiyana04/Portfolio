@@ -1,33 +1,79 @@
-import React from 'react';
-import { Code2 } from 'lucide-react';
-import skills from '../data/skills';
+import React, { useEffect } from 'react';
 
-function Skills() {
+const Skills = () => {
+  const skillsData = {
+    'Programming Languages': [
+      { name: 'Python', level: 90 },
+      { name: 'Java', level: 85 },
+      { name: 'JavaScript', level: 90 },
+      { name: 'TypeScript', level: 80 },
+      { name: 'C++', level: 75 }
+    ],
+    'Web Technologies': [
+      { name: 'React', level: 90 },
+      { name: 'Node.js', level: 85 },
+      { name: 'HTML5/CSS3', level: 90 },
+      { name: 'Angular', level: 75 },
+      { name: 'Express.js', level: 80 }
+    ],
+    'Other Skills': [
+      { name: 'Database (SQL/NoSQL)', level: 85 },
+      { name: 'Cloud (AWS/Azure)', level: 80 },
+      { name: 'DevOps', level: 75 },
+      { name: 'Machine Learning', level: 70 },
+      { name: 'UI/UX Design', level: 65 }
+    ]
+  };
+
+  useEffect(() => {
+    // Animation for skill bars
+    const skillBars = document.querySelectorAll('.skill-progress');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.width = `${entry.target.dataset.level}%`;
+        }
+      });
+    }, { threshold: 0.3 });
+
+    skillBars.forEach(bar => observer.observe(bar));
+
+    return () => {
+      skillBars.forEach(bar => observer.unobserve(bar));
+    };
+  }, []);
+
   return (
-    <section className="py-20">
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-center mb-12">
-          <Code2 size={28} className="text-blue-600 mr-3" />
-          <h2 className="text-4xl font-bold gradient-text">Technical Expertise</h2>
+    <section className="skills" id="skills">
+      <div className="container">
+        <div className="section-title">
+          <h2>Skills</h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
-          {skills.map((skillGroup, index) => (
-            <div key={index} className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-xl font-bold mb-6 text-gray-800">{skillGroup.category}</h3>
-              <ul className="space-y-3">
-                {skillGroup.items.map((skill, skillIndex) => (
-                  <li key={skillIndex} className="skill-item flex items-center text-gray-700">
-                    <Code2 size={18} className="skill-icon text-blue-600 mr-3" />
-                    <span>{skill}</span>
-                  </li>
-                ))}
-              </ul>
+        <div className="skills-container">
+          {Object.entries(skillsData).map(([category, skills]) => (
+            <div className="skill-category" key={category}>
+              <h3>{category}</h3>
+              {skills.map((skill, index) => (
+                <div className="skill-item" key={index}>
+                  <div className="skill-name">
+                    <span>{skill.name}</span>
+                    <span>{skill.level}%</span>
+                  </div>
+                  <div className="skill-bar">
+                    <div 
+                      className="skill-progress" 
+                      data-level={skill.level}
+                      style={{ width: '0%' }}
+                    ></div>
+                  </div>
+                </div>
+              ))}
             </div>
           ))}
         </div>
       </div>
     </section>
   );
-}
+};
 
 export default Skills;

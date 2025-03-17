@@ -1,27 +1,36 @@
 import React from 'react';
-import { User } from 'lucide-react';
 
-function About() {
+const About = () => {
   return (
-    <section className="py-20">
-      <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto">
-          <div className="flex items-center justify-center mb-12">
-            <User size={28} className="text-blue-600 mr-3" />
-            <h2 className="text-4xl font-bold gradient-text">About Me</h2>
+    <section className="about" id="about">
+      <div className="container">
+        <div className="section-title">
+          <h2>About Me</h2>
+        </div>
+        <div className="about-content">
+          <div className="about-text">
+            <p>
+              Hello! I'm a passionate Senior Software Engineer with expertise in building innovative solutions 
+              that solve real-world problems. With over X years of experience in the tech industry, 
+              I've worked on various projects ranging from web applications to cloud infrastructure.
+            </p>
+            <p>
+              My approach to software development is centered around creating clean, maintainable code 
+              that delivers exceptional user experiences. I'm constantly learning and exploring new 
+              technologies to stay at the forefront of the rapidly evolving tech landscape.
+            </p>
+            <p>
+              When I'm not coding, you can find me hiking in the mountains, reading tech blogs, 
+              or contributing to open-source projects.
+            </p>
           </div>
-          <div className="text-xl text-gray-600 leading-relaxed space-y-6">
-            <p>
-              With over 8 years of experience in software development, I specialize in building scalable, enterprise-level applications that solve complex business problems. My expertise spans across full-stack development, cloud architecture, and AI integration.
-            </p>
-            <p>
-              I'm passionate about creating innovative solutions that make a real impact, whether it's developing high-performance web applications, designing robust backend systems, or implementing cutting-edge machine learning models.
-            </p>
+          <div className="about-image">
+            <img src="/assets/images/profile.jpg" alt="Your Name" />
           </div>
         </div>
       </div>
     </section>
   );
-}
+};
 
 export default About;

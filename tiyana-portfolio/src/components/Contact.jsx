@@ -1,55 +1,119 @@
-import React from 'react';
-import { MessageSquare, Send } from 'lucide-react';
+import React, { useState } from 'react';
+import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 
-function Contact() {
+const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: ''
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Form submission logic would go here
+    console.log('Form submitted:', formData);
+    alert('Thank you for your message! I will get back to you soon.');
+    setFormData({
+      name: '',
+      email: '',
+      subject: '',
+      message: ''
+    });
+  };
+
   return (
-    <section className="py-20">
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-center mb-12">
-          <MessageSquare size={28} className="text-blue-600 mr-3" />
-          <h2 className="text-4xl font-bold gradient-text">Let's Connect</h2>
+    <section className="contact" id="contact">
+      <div className="container">
+        <div className="section-title">
+          <h2>Contact Me</h2>
         </div>
-        <div className="max-w-xl mx-auto">
-          <form className="space-y-6">
-            <div>
-              <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
-              <input
-                type="text"
-                id="name"
-                className="contact-input w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all duration-200"
-                placeholder="John Doe"
-              />
+        <div className="contact-container">
+          <div className="contact-form">
+            <form onSubmit={handleSubmit}>
+              <div className="form-group">
+                <label htmlFor="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+              <div className="form-group">
+                <label htmlFor="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+              <div className="form-group">
+                <label htmlFor="subject">Subject</label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  value={formData.subject}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+              <div className="form-group">
+                <label htmlFor="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" className="btn">Send Message</button>
+            </form>
+          </div>
+          <div className="contact-info">
+            <div className="contact-info-item">
+              <FaPhone />
+              <div>
+                <h4>Phone</h4>
+                <p>+1 (123) 456-7890</p>
+              </div>
             </div>
-            <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
-              <input
-                type="email"
-                id="email"
-                className="contact-input w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all duration-200"
-                placeholder="john@example.com"
-              />
+            <div className="contact-info-item">
+              <FaEnvelope />
+              <div>
+                <h4>Email</h4>
+                <p>your.email@example.com</p>
+              </div>
             </div>
-            <div>
-              <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">Your Message</label>
-              <textarea
-                id="message"
-                rows={6}
-                className="contact-input w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all duration-200"
-                placeholder="Tell me about your project..."
-              ></textarea>
+            <div className="contact-info-item">
+              <FaMapMarkerAlt />
+              <div>
+                <h4>Location</h4>
+                <p>San Francisco, CA, USA</p>
+              </div>
             </div>
-            <button
-              type="submit"
-              className="w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white py-4 px-6 rounded-lg font-semibold hover:from-blue-700 hover:to-blue-800 transition-all duration-200 flex items-center justify-center"
-            >
-              Send Message
-              <Send size={18} className="ml-2" />
-            </button>
-          </form>
+            <div className="download-cv">
+              <a href="/assets/resume.pdf" download className="btn">
+                Download CV
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
   );
-}
+};
 
 export default Contact;

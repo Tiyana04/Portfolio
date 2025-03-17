@@ -1,35 +1,53 @@
 import React from 'react';
-import { Briefcase, ExternalLink } from 'lucide-react';
-import projects from '../data/projects';
 
-function Projects() {
+const Projects = () => {
+  const projectsData = [
+    {
+      title: 'E-commerce Platform',
+      description: 'Built a full-stack e-commerce platform with React, Node.js, and MongoDB. Implemented features like user authentication, product search, shopping cart, and payment integration.',
+      image: '/assets/images/project1.jpg',
+      tags: ['React', 'Node.js', 'MongoDB', 'Express', 'Redux'],
+      link: 'https://github.com/yourusername/ecommerce-platform'
+    },
+    {
+      title: 'AI Content Generator',
+      description: 'Developed an AI-powered content generator that creates blog posts, social media captions, and marketing copy. Utilized Python and OpenAI GPT-3 API for text generation.',
+      image: '/assets/images/project2.jpg',
+      tags: ['Python', 'Flask', 'OpenAI API', 'React', 'AWS'],
+      link: 'https://github.com/yourusername/ai-content-generator'
+    },
+    {
+      title: 'Health Monitoring App',
+      description: 'Created a cross-platform mobile application for health monitoring. Features include step counting, heart rate monitoring, sleep tracking, and nutrition logging.',
+      image: '/assets/images/project3.jpg',
+      tags: ['React Native', 'Firebase', 'Redux', 'HealthKit', 'Google Fit'],
+      link: 'https://github.com/yourusername/health-monitoring-app'
+    }
+  ];
+
   return (
-    <section className="py-20 bg-gradient-to-b from-gray-50 to-gray-100">
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-center mb-12">
-          <Briefcase size={28} className="text-blue-600 mr-3" />
-          <h2 className="text-4xl font-bold gradient-text">Featured Projects</h2>
+    <section className="projects" id="projects">
+      <div className="container">
+        <div className="section-title">
+          <h2>Projects</h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
-          {projects.map((project, index) => (
-            <div key={index} className="project-card bg-white rounded-xl shadow-lg overflow-hidden">
-              <div className="relative">
-                <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+        <div className="projects-grid">
+          {projectsData.map((project, index) => (
+            <div className="project-card" key={index}>
+              <div className="project-image">
+                <img src={project.image} alt={project.title} />
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-3">{project.title}</h3>
-                <p className="text-gray-600 mb-4">{project.description}</p>
-                <div className="flex flex-wrap gap-2 mb-4">
+              <div className="project-info">
+                <h3>{project.title}</h3>
+                <p>{project.description}</p>
+                <div className="project-tags">
                   {project.tags.map((tag, tagIndex) => (
-                    <span key={tagIndex} className="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">
-                      {tag}
-                    </span>
+                    <span className="project-tag" key={tagIndex}>{tag}</span>
                   ))}
                 </div>
-                <a href={project.link} className="inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold transition-colors duration-200">
-                  View Project <ExternalLink size={16} className="ml-2" />
-                </a>
+                <div style={{ marginTop: '20px' }}>
+                  <a href={project.link} className="btn" target="_blank" rel="noreferrer">View Project</a>
+                </div>
               </div>
             </div>
           ))}
@@ -37,6 +55,6 @@ function Projects() {
       </div>
     </section>
   );
-}
+};
 
 export default Projects;
