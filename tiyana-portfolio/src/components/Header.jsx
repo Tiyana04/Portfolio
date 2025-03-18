@@ -18,7 +18,7 @@ const Header = () => {
           <a href="mailto:tiyanaludowyke04@gmail.com" className="social-icon">
             <FaEnvelope size={24} />
           </a>
-          <a href="https://www.instagram.com/_tiyana.l/ " className="social-icon" target="_blank" rel="noreferrer">
+          <a href="https://www.instagram.com/_tiyana.l/" className="social-icon" target="_blank" rel="noreferrer">
             <FaInstagram size={24} />
           </a>
           <a href="https://web.facebook.com/profile.php?id=61556402108150" className="social-icon" target="_blank" rel="noreferrer">

@@ -3,10 +3,10 @@ import React from 'react';
 const Achievements = () => {
   const achievementsData = [
     {
-      title: 'Best Innovative Solution Award',
+      title: 'Participated in Hult Prize',
       organization: 'Tech Conference 2023',
       description: 'Received award for developing an innovative AI-powered solution that increased productivity by 40%.',
-      image: '/assets/images/achievement1.jpg'
+      image: '/assets/Hult Prize.jpg'
     },
     {
       title: 'Open Source Contributor',
