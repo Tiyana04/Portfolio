@@ -1,9 +1,18 @@
 import React from 'react';
 import { FaGithub, FaLinkedin, FaEnvelope, FaInstagram, FaFacebook } from 'react-icons/fa';
+// import headerImage from '../assets/Header.png';
 
 const Header = () => {
   return (
-    <header className="header" id="home">
+    // <header className="header" id="home" style={{backgroundImage: `url(${headerImage})`}}>
+    <header className="header" id="home" 
+      // style={{
+      //   backgroundImage: `url('/assets/Header.png')`,
+      //   backgroundSize: 'cover',
+      //   backgroundPosition: 'center',
+      //   backgroundRepeat: 'no-repeat'
+      // }}
+    >
       <div className="header-content">
         <h1> Tiyana Ludowyke</h1>
         <h2> Undergraduate Computer Science Student </h2>

@@ -88,6 +88,7 @@
 .header {
   height: 100vh;
   background: linear-gradient(135deg, #1a365d 0%, #3498db 100%);
+  /* background-image: url('/assets/Header.png'); */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -384,15 +385,18 @@
 
 .contact-info {
   flex: 1;
+  margin-left: 100px;
 }
 
 .form-group {
   margin-bottom: 20px;
+  margin-right: 10px;
 }
 
 .form-group label {
   display: block;
   margin-bottom: 8px;
+  margin-left: 10px;
   font-weight: 500;
 }
 

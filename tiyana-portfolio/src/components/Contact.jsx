@@ -31,13 +31,47 @@ const Contact = () => {
     <section className="contact" id="contact">
       <div className="container">
         <div className="section-title">
-          <h2>Contact Me</h2>
+          <h2> Contact Me </h2>
         </div>
+
         <div className="contact-container">
+          <div className="contact-info">
+
+            <div className="contact-info-item">
+              <FaPhone />
+              <div>
+                <h4>Phone</h4>
+                <p> +94 78 453 5298 </p>
+              </div>
+            </div>
+
+            <div className="contact-info-item">
+              <FaEnvelope />
+              <div>
+                <h4> Email </h4>
+                <p> tiyanaludowyke04@gmail.com </p>
+              </div>
+            </div>
+
+            <div className="contact-info-item">
+              <FaMapMarkerAlt />
+              <div>
+                <h4> Location </h4>
+                <p> 61/3A, St. Anne's Church Road, Weligampitiya, Ja-Ela. </p>
+              </div>
+            </div>
+
+            <div className="download-cv">
+              <a href="/assets/Tiyana CV.pdf" download className="btn">
+                Download CV
+              </a>
+            </div>
+          </div>
+
           <div className="contact-form">
             <form onSubmit={handleSubmit}>
               <div className="form-group">
-                <label htmlFor="name">Name</label>
+                <label htmlFor="name"> Name </label>
                 <input
                   type="text"
                   id="name"
@@ -47,8 +81,9 @@ const Contact = () => {
                   required
                 />
               </div>
+
               <div className="form-group">
-                <label htmlFor="email">Email</label>
+                <label htmlFor="email"> Email </label>
                 <input
                   type="email"
                   id="email"
@@ -58,8 +93,9 @@ const Contact = () => {
                   required
                 />
               </div>
+
               <div className="form-group">
-                <label htmlFor="subject">Subject</label>
+                <label htmlFor="subject"> Subject </label>
                 <input
                   type="text"
                   id="subject"
@@ -69,8 +105,9 @@ const Contact = () => {
                   required
                 />
               </div>
+
               <div className="form-group">
-                <label htmlFor="message">Message</label>
+                <label htmlFor="message"> Message </label>
                 <textarea
                   id="message"
                   name="message"
@@ -79,36 +116,9 @@ const Contact = () => {
                   required
                 ></textarea>
               </div>
-              <button type="submit" className="btn">Send Message</button>
+
+              <button type="submit" className="btn"> Send Message </button>
             </form>
-          </div>
-          <div className="contact-info">
-            <div className="contact-info-item">
-              <FaPhone />
-              <div>
-                <h4>Phone</h4>
-                <p>+1 (123) 456-7890</p>
-              </div>
-            </div>
-            <div className="contact-info-item">
-              <FaEnvelope />
-              <div>
-                <h4>Email</h4>
-                <p>your.email@example.com</p>
-              </div>
-            </div>
-            <div className="contact-info-item">
-              <FaMapMarkerAlt />
-              <div>
-                <h4>Location</h4>
-                <p>San Francisco, CA, USA</p>
-              </div>
-            </div>
-            <div className="download-cv">
-              <a href="/assets/resume.pdf" download className="btn">
-                Download CV
-              </a>
-            </div>
           </div>
         </div>
       </div>
