@@ -6,22 +6,19 @@ const Skills = () => {
       { name: 'Python', level: 90 },
       { name: 'Java', level: 85 },
       { name: 'JavaScript', level: 90 },
-      { name: 'TypeScript', level: 80 },
-      { name: 'C++', level: 75 }
     ],
     'Web Technologies': [
       { name: 'React', level: 90 },
       { name: 'Node.js', level: 85 },
-      { name: 'HTML5/CSS3', level: 90 },
-      { name: 'Angular', level: 75 },
-      { name: 'Express.js', level: 80 }
+      { name: 'HTML5/CSS3', level: 97 },
+      { name: 'Angular', level: 70 },
+      { name: 'Express.js', level: 60 }
     ],
     'Other Skills': [
-      { name: 'Database (SQL/NoSQL)', level: 85 },
+      { name: 'UI/UX Design', level: 97 },
+      { name: 'Database (MySQL)', level: 85 },
       { name: 'Cloud (AWS/Azure)', level: 80 },
-      { name: 'DevOps', level: 75 },
-      { name: 'Machine Learning', level: 70 },
-      { name: 'UI/UX Design', level: 65 }
+      { name: 'DevOps', level: 75 }     
     ]
   };
 
