@@ -4,72 +4,72 @@ const Projects = () => {
   const projectsData = [
     {
         title: 'Student 360',
-        description: 'Built a full-stack e-commerce platform with React, Node.js, and MongoDB. Implemented features like user authentication, product search, shopping cart, and payment integration.',
+        description: 'Developed an app for primary schools to digitalize the student record book featuring real-time academic access, noticeboard, and communication tools.',
         image: '/assets/Student 360.jpg',
         tags: ['Flutter', 'Node.js', 'MongoDB'],
         link: 'https://github.com/yourusername/ecommerce-platform'
     },
     {
         title: "Let's Grow Pre-School & Childcare",
-        description: 'Developed a responsive preschool website, featuring program details, admissions, gallery and contact information.',
+        description: 'Developed a responsive website for a preschool, featuring program details, admissions, gallery and contact information.',
         image: '/assets/Preschool.png',
         tags: ['React'],
         link: 'https://github.com/yourusername/ecommerce-platform'
     },
     {
         title: 'Real Estate Agent',
-        description: 'Developed an AI-powered content generator that creates blog posts, social media captions, and marketing copy. Utilized Python and OpenAI GPT-3 API for text generation.',
+        description: 'Developed a dynamic real estate website using React, featuring property listings, search filters, and an intuitive user interface for seamless browsing.',
         image: '/assets/Estate Agent.jpg',
-        tags: ['Python', 'Flask', 'OpenAI API', 'React', 'AWS'],
+        tags: ['React'],
         link: 'https://github.com/yourusername/ai-content-generator'
     },
     {
         title: 'Green Steps',
-        description: 'Created a cross-platform mobile application for health monitoring. Features include step counting, heart rate monitoring, sleep tracking, and nutrition logging.',
+        description: 'Designed Green Steps in Figma, a sustainability-focused app promoting eco-friendly habits through interactive features and user engagement.',
         image: '/assets/Green Steps.png',
-        tags: ['React Native', 'Firebase', 'Redux', 'HealthKit', 'Google Fit'],
-        link: 'https://github.com/yourusername/health-monitoring-app'
+        tags: ['Figma'],
+        link: 'https://youtu.be/vKiUGMEXMVA'
     },
     {
         title: 'Real-Time Event Ticketing System',
-        description: 'Created a cross-platform mobile application for health monitoring. Features include step counting, heart rate monitoring, sleep tracking, and nutrition logging.',
+        description: 'Developed a website using React and Node.js, enabling seamless ticket booking, live availability updates, and secure transactions.',
         image: '/assets/Ticketing System.png',
-        tags: ['React Native', 'Firebase', 'Redux', 'HealthKit', 'Google Fit'],
-        link: 'https://github.com/yourusername/health-monitoring-app'
+        tags: ['Java', 'React', 'Node.js'],
+        link: 'https://youtu.be/47BVAqbfyeM'
     },
     {
         title: 'Biography of Zendaya',
-        description: 'Created a cross-platform mobile application for health monitoring. Features include step counting, heart rate monitoring, sleep tracking, and nutrition logging.',
+        description: "Created a website showcasing Zendaya's life, career, and achievements with a clean and responsive design.",
         image: '/assets/Bio Zendaya.png',
-        tags: ['React Native', 'Firebase', 'Redux', 'HealthKit', 'Google Fit'],
+        tags: ['HTML5', 'CSS'],
         link: 'https://github.com/yourusername/health-monitoring-app'
     },
     {
         title: 'Scientific Research Data Management System',
         description: 'Created a cross-platform mobile application for health monitoring. Features include step counting, heart rate monitoring, sleep tracking, and nutrition logging.',
         image: '/assets/Research Data.jpg',
-        tags: ['React Native', 'Firebase', 'Redux', 'HealthKit', 'Google Fit'],
+        tags: ['Python'],
         link: 'https://github.com/yourusername/health-monitoring-app'
     },
     {
         title: 'Student Management System',
         description: 'Created a cross-platform mobile application for health monitoring. Features include step counting, heart rate monitoring, sleep tracking, and nutrition logging.',
         image: '/assets/Student Management.webp',
-        tags: ['React Native', 'Firebase', 'Redux', 'HealthKit', 'Google Fit'],
+        tags: ['Java'],
         link: 'https://github.com/yourusername/health-monitoring-app'
     },
     {
         title: 'OCEANAUTS Website',
         description: 'Created a cross-platform mobile application for health monitoring. Features include step counting, heart rate monitoring, sleep tracking, and nutrition logging.',
         image: '/assets/Oceanauts.png',
-        tags: ['React Native', 'Firebase', 'Redux', 'HealthKit', 'Google Fit'],
+        tags: ['HTML', 'CSS'],
         link: 'https://github.com/yourusername/health-monitoring-app'
     },
     {
         title: 'Banking Transaction System',
         description: 'Created a cross-platform mobile application for health monitoring. Features include step counting, heart rate monitoring, sleep tracking, and nutrition logging.',
         image: '/assets/Banking Transaction.webp',
-        tags: ['React Native', 'Firebase', 'Redux', 'HealthKit', 'Google Fit'],
+        tags: ['Python'],
         link: 'https://github.com/yourusername/health-monitoring-app'
     }
   ];
@@ -95,7 +95,7 @@ const Projects = () => {
                   ))}
                 </div>
                 <div style={{ marginTop: '20px' }}>
-                  <a href={project.link} className="btn" target="_blank" rel="noreferrer">View Project</a>
+                  <a href={project.link} className="btn" target="_blank" rel="noreferrer"> View Project </a>
                 </div>
               </div>
             </div>
