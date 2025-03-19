@@ -6,7 +6,14 @@ const Projects = () => {
         title: 'Student 360',
         description: 'Built a full-stack e-commerce platform with React, Node.js, and MongoDB. Implemented features like user authentication, product search, shopping cart, and payment integration.',
         image: '/assets/Student 360.jpg',
-        tags: ['Flutter', 'Node.js', 'MongoDB', 'Express'],
+        tags: ['Flutter', 'Node.js', 'MongoDB'],
+        link: 'https://github.com/yourusername/ecommerce-platform'
+    },
+    {
+        title: "Let's Grow Pre-School & Childcare",
+        description: 'Developed a responsive preschool website, featuring program details, admissions, gallery and contact information.',
+        image: '/assets/Preschool.png',
+        tags: ['React'],
         link: 'https://github.com/yourusername/ecommerce-platform'
     },
     {
