@@ -94,8 +94,8 @@ const Projects = () => {
                     <span className="project-tag" key={tagIndex}>{tag}</span>
                   ))}
                 </div>
-                <div style={{ marginTop: '20px' }}>
-                  <a href={project.link} className="btn" target="_blank" rel="noreferrer"> View Project </a>
+                <div className="project-links">
+                  <a href={project.link} className="btn" target="_blank" rel="noreferrer">View Project</a>
                 </div>
               </div>
             </div>
