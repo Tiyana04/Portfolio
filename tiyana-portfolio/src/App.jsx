@@ -7,7 +7,9 @@ import Projects from './components/Projects';
 import Achievements from './components/Achievements';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+
 import './styles/App.css';
+import './styles/Header.css'
 
 function App() {
   return (
