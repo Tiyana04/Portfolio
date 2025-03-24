@@ -205,3 +205,56 @@ section {
   background-color: #112240;
   transform: translateY(-2px);
 }
+
+/* Common styles to prevent horizontal scrolling */
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Container width adjustments for different screen sizes */
+@media (max-width: 1200px) {
+  .container {
+      width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+      padding: 60px 0;
+  }
+  
+  .section-title h2 {
+      font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+      width: 100%;
+      padding: 0 10px;
+  }
+  
+  section {
+      padding: 40px 0;
+  }
+}

@@ -29,6 +29,7 @@
     font-weight: bold;
     color: white;
     text-decoration: none;
+    z-index: 1001; /* Keep above the mobile menu */
 }
   
 .navbar-links {
@@ -45,7 +46,94 @@
   
 .navbar-links a:hover {
     color: #64ffda;
-}  
+}
+
+/* Hamburger menu styles */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+    z-index: 1001; /* Keep above the mobile menu */
+}
+
+.hamburger span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+/* Mobile menu */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    max-width: 300px;
+    height: 100vh;
+    background-color: #1a365d;
+    z-index: 1000;
+    padding: 80px 20px 40px;
+    transition: right 0.3s ease;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+.mobile-menu.active {
+    right: 0;
+}
+
+.mobile-menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: color 0.3s ease;
+}
+
+.mobile-menu a:hover {
+    color: #64ffda;
+}
+
+/* Overlay when mobile menu is open */
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Hamburger animation when active */
+.hamburger.active span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
   
 /* Header styles */
 .header {
@@ -115,5 +203,53 @@
     }
     60% {
       transform: translateY(-5px);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .navbar-container {
+        width: 95%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none; /* Hide desktop links */
+    }
+    
+    .hamburger {
+        display: flex; /* Show hamburger icon */
+    }
+    
+    .header-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .header-content h2 {
+        font-size: 1.25rem;
+    }
+    
+    .social-icons {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-content h1 {
+        font-size: 2rem;
+    }
+    
+    .header-content h2 {
+        font-size: 1rem;
+    }
+    
+    .social-icons {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .mobile-menu {
+        width: 80%;
     }
 }

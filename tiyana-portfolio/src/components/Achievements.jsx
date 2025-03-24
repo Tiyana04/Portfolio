@@ -25,7 +25,7 @@ const Achievements = () => {
     {
       title: 'Theory of Music',
       organization: 'Trinity College of London',
-      description: 'Earned a Grade 6 Theory of Music certification from Trinity College London with Merit, demonstrating a strong understanding of music theory.',
+      description: 'Earned a Grade 5 Theory of Music certification from Trinity College London with Distinction, demonstrating a strong understanding of music theory.',
       image: '/assets/Trinity_Grade5.jpg'
     },
     {
