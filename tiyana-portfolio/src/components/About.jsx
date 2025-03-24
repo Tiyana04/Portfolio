@@ -10,18 +10,18 @@ const About = () => {
         <div className="about-content">
           <div className="about-text">
             <p>
-              Hello! I'm a passionate Computer Science Undergraduate Student with expertise in building innovative solutions 
-              that solve real-world problems. I've worked on various projects ranging from web applications to mobile applications.
+            I am a passionate <b>Computer Science</b> undergraduate at IIT, affiliated with the University of 
+            Westminster, graduating in 2027. With a strong foundation in programming and <b>problem-solving</b>, 
+            I enjoy blending technical and creative skills to build intuitive digital experiences. 
+            My goal is to become a <b>UI/UX designer</b> and <b>full-stack developer.</b>
             </p> <br />
             <p>
-              My approach to software development is centered around creating clean, maintainable code 
-              that delivers exceptional user experiences. I'm constantly learning and exploring new 
-              technologies to stay at the forefront of the rapidly evolving tech landscape.
+            Beyond academics, I am involved in multiple <b>startups</b> focused on website development, social 
+            media marketing, and digital branding, enhancing my skills in web development and content 
+            creation. I also serve as the <b>upcoming secretary of Rotaract</b>, contributing to leadership, 
+            event planning, and community service. Always eager to learn and innovate, I embrace new 
+            challenges to grow as a developer, designer, and leader.
             </p> <br />
-            <p>
-              When I'm not coding, you can find me playing the piano, reading books, drawing 
-              or engaging in my extra-curricular activities.
-            </p>
           </div>
           <div className="about-image">
             <img src="/assets/Tiyana.jpg" alt="Your Name" />
