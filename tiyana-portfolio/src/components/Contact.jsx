@@ -112,7 +112,7 @@ const Contact = () => {
             </div>
 
             <div className="download-cv">
-              <a href="/assets/Tiyana CV.pdf" download className="btn">
+              <a href="/assets/Tiyana Ludowyke CV.pdf" download className="btn">
                 Download CV
               </a>
             </div>
