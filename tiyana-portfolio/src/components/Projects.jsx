@@ -7,14 +7,14 @@ const Projects = () => {
         description: 'Developed an app for primary schools to digitalize the student record book featuring real-time academic access, noticeboard, and communication tools.',
         image: '/assets/Student 360.jpg',
         tags: ['Flutter', 'Node.js', 'MongoDB'],
-        link: 'https://github.com/yourusername/ecommerce-platform'
+        link: 'https://youtu.be/rnA3GblcPw0'
     },
     {
         title: "Let's Grow Pre-School & Childcare",
         description: 'Developed a responsive website for a preschool, featuring program details, admissions, gallery and contact information.',
         image: '/assets/Preschool.png',
         tags: ['React'],
-        link: 'https://github.com/yourusername/ecommerce-platform'
+        link: 'https://github.com/binubandara/pre-school-website'
     },
     {
         title: 'Real Estate Agent',
