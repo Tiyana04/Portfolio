@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 const Skills = () => {
   const skillsData = {
     'Programming Languages': [
-      { name: 'Python', level: 90 },
+      { name: 'Python', level: 80 },
       { name: 'Java', level: 85 },
       { name: 'JavaScript', level: 90 },
     ],
@@ -11,14 +11,13 @@ const Skills = () => {
       { name: 'React', level: 90 },
       { name: 'Node.js', level: 85 },
       { name: 'HTML5/CSS3', level: 97 },
-      { name: 'Angular', level: 70 },
       { name: 'Express.js', level: 60 }
     ],
     'Other Skills': [
       { name: 'UI/UX Design', level: 97 },
       { name: 'Database (MySQL)', level: 85 },
-      { name: 'Cloud (AWS/Azure)', level: 80 },
-      { name: 'DevOps', level: 75 }     
+      { name: 'Canva', level: 95 },
+      { name: 'GitHub', level: 75 }     
     ]
   };
 
