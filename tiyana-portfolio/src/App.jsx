@@ -9,7 +9,14 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 import './styles/App.css';
-import './styles/Header.css'
+import './styles/Header.css';
+import './styles/About.css';
+import './styles/Education.css';
+import './styles/Skills.css';
+import './styles/Projects.css';
+import './styles/Achievements.css';
+import './styles/Contact.css';
+import './styles/Footer.css';
 
 function App() {
   return (
