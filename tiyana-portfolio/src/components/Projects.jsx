@@ -32,7 +32,7 @@ const Projects = () => {
     },
     {
         title: 'Real-Time Event Ticketing System',
-        description: 'Developed a website using React and Node.js, enabling seamless ticket booking, live availability updates, and secure transactions.',
+        description: 'Developed a website using React and Node.js, and a CLI using Java, enabling seamless ticket booking, live availability updates, and secure transactions.',
         image: '/assets/Ticketing System.png',
         tags: ['Java', 'React', 'Node.js'],
         link: 'https://youtu.be/47BVAqbfyeM'
@@ -46,28 +46,28 @@ const Projects = () => {
     },
     {
         title: 'Scientific Research Data Management System',
-        description: 'Created a cross-platform mobile application for health monitoring. Features include step counting, heart rate monitoring, sleep tracking, and nutrition logging.',
+        description: 'A Python application that simplifies data collection, organization, and analysis for researchers, featuring validation, structured storage, and key statistical insights.',
         image: '/assets/Research Data.jpg',
         tags: ['Python'],
         link: 'https://github.com/yourusername/health-monitoring-app'
     },
     {
         title: 'Student Management System',
-        description: 'Created a cross-platform mobile application for health monitoring. Features include step counting, heart rate monitoring, sleep tracking, and nutrition logging.',
+        description: 'A Java-based application for managing student records, enabling efficient data entry, updates, and retrieval with a user-friendly interface.',
         image: '/assets/Student Management.webp',
         tags: ['Java'],
         link: 'https://github.com/yourusername/health-monitoring-app'
     },
     {
         title: 'OCEANAUTS Website',
-        description: 'Created a cross-platform mobile application for health monitoring. Features include step counting, heart rate monitoring, sleep tracking, and nutrition logging.',
+        description: 'A platform promoting marine conservation through educational content, interactive resources, and advocacy on ocean sustainability.',
         image: '/assets/Oceanauts.png',
         tags: ['HTML', 'CSS'],
         link: 'https://github.com/yourusername/health-monitoring-app'
     },
     {
         title: 'Banking Transaction System',
-        description: 'Created a cross-platform mobile application for health monitoring. Features include step counting, heart rate monitoring, sleep tracking, and nutrition logging.',
+        description: 'Built a Python app to track income, expenses, and budgets, with data visualization for better financial planning.',
         image: '/assets/Banking Transaction.webp',
         tags: ['Python'],
         link: 'https://github.com/yourusername/health-monitoring-app'
