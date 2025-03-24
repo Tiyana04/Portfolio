@@ -1,0 +1,29 @@
+/* Education Section */
+.education {
+    background-color: #f8f9fa;
+}
+
+.education-item {
+    margin-bottom: 30px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.education-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.education-item h3 {
+    color: #1a365d;
+    margin-bottom: 10px;
+}
+
+.education-item .duration {
+    color: #4a6fa5;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
