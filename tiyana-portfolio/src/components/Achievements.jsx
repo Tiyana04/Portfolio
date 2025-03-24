@@ -4,22 +4,34 @@ const Achievements = () => {
   const achievementsData = [
     {
       title: 'Participated in Hult Prize',
-      organization: 'Tech Conference 2023',
-      description: 'Received award for developing an innovative AI-powered solution that increased productivity by 40%.',
+      organization: 'Hult Prize On-Campus Qualifier Round!',
+      description: 'Competed in the Hult Prize On-Campus Qualifier with Student 360 application.',
       image: '/assets/Hult Prize.jpg'
     },
     {
-      title: 'Open Source Contributor',
-      organization: 'GitHub',
-      description: 'Contributed to several major open-source projects with over 1000+ stars and 200+ forks.',
-      image: '/assets/images/achievement1.jpg'
+      title: 'Theory of Music',
+      organization: 'Trinity College of London',
+      description: 'Earned a Grade 6 Theory of Music certification from Trinity College London with Merit, demonstrating a strong understanding of music theory.',
+      image: '/assets/Trinity_Grade6.jpg'
     },
     {
-      title: 'Certified Cloud Architect',
-      organization: 'AWS',
-      description: 'Earned AWS Certified Solutions Architect - Professional certification with a 95% score.',
-      image: '/assets/images/achievement1.jpg'
-    }
+      title: 'Inter Divisional Secretariat Athletic Meet ',
+      organization: 'Ministry of Sports',
+      description: 'Secured third place in the 4x100m relay at the Inter-Divisional Secretariat Athletic Meet showcasing teamwork, speed, and athletic dedication.',
+      image: '/assets/Athletic.jpg'
+    },
+    {
+      title: 'Theory of Music',
+      organization: 'Trinity College of London',
+      description: 'Earned a Grade 6 Theory of Music certification from Trinity College London with Merit, demonstrating a strong understanding of music theory.',
+      image: '/assets/Trinity_Grade5.jpg'
+    },
+    {
+      title: 'Piano Competition All Island Finalist',
+      organization: 'IIMD',
+      description: 'Won a Gold Medal in the Grade 5 Piano Competition at IIMD and advanced as an All-Island Finalist, showcasing exceptional musical talent and performance skills.',
+      image: '/assets/IIMD.jpg'
+    },
   ];
 
   return (
