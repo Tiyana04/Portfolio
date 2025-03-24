@@ -8,7 +8,7 @@ import Achievements from './components/Achievements';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
-import './styles/App.css';
+// import './styles/App.css';
 import './styles/Header.css';
 import './styles/About.css';
 import './styles/Education.css';
