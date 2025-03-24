@@ -1,0 +1,42 @@
+/* Achievements Section */
+.achievements {
+    background-color: white;
+}
+
+.achievements-slider {
+    margin-top: 30px;
+    display: flex;
+    overflow-x: auto;
+    gap: 30px;
+    padding: 20px 10px;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.achievement-item {
+    min-width: 300px;
+    scroll-snap-align: start;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.achievement-image {
+    height: 200px;
+}
+
+.achievement-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.achievement-info {
+    padding: 20px;
+}
+
+.achievement-info h3 {
+    color: #1a365d;
+    margin-bottom: 10px;
+}
