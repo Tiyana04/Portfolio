@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Achievements = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
+
   const achievementsData = [
     {
       title: 'Participated in Hult Prize',
@@ -34,17 +36,31 @@ const Achievements = () => {
     },
   ];
 
+  const openImageModal = (image) => {
+    setSelectedImage(image);
+  };
+
+  const closeImageModal = () => {
+    setSelectedImage(null);
+  };
+
   return (
     <section className="achievements" id="achievements">
       <div className="container">
         <div className="section-title">
           <h2>Achievements</h2>
         </div>
-        <div className="achievements-slider">
+        <div className="achievements-grid">
           {achievementsData.map((achievement, index) => (
             <div className="achievement-item" key={index}>
-              <div className="achievement-image">
+              <div 
+                className="achievement-image" 
+                onClick={() => openImageModal(achievement.image)}
+              >
                 <img src={achievement.image} alt={achievement.title} />
+                <div className="image-overlay">
+                  <span>Click to Enlarge</span>
+                </div>
               </div>
               <div className="achievement-info">
                 <h3>{achievement.title}</h3>
@@ -55,6 +71,16 @@ const Achievements = () => {
           ))}
         </div>
       </div>
+
+      {/* Modal for displaying expanded images */}
+      {selectedImage && (
+        <div className="image-modal" onClick={closeImageModal}>
+          <div className="modal-content">
+            <span className="close-modal" onClick={closeImageModal}>&times;</span>
+            <img src={selectedImage} alt="Expanded view" />
+          </div>
+        </div>
+      )}
     </section>
   );
 };
