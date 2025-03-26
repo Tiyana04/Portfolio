@@ -15,7 +15,8 @@ const Education = () => {
       institution: 'Open University of Sri Lanka',
       location: 'Nugegoda, Colombo.',
       duration: '2023 - 2024',
-      description: 'Completed a Diploma in Digital Marketing, gaining expertise in SEO, social media marketing, content strategy, and data analytics.',
+      description: 'Diploma in Digital Marketing, gaining expertise in SEO, social media marketing, content strategy, and data analytics.',
+      results: "Pending results."
     },
     {
       degree: 'Advanced Level - Edexcel',
