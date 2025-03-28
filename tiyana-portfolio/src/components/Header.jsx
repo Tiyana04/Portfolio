@@ -44,6 +44,7 @@ const Header = () => {
     { href: "#education", label: "Education" },
     { href: "#skills", label: "Skills" },
     { href: "#projects", label: "Projects" },
+    { href: "#achievements", label: "Achievements"},
     { href: "#contact", label: "Contact" }
   ];
 
