@@ -23,7 +23,7 @@ const Education = () => {
       institution: "St. Bridget's Convent",
       location: 'Colombo 07, Sri Lanka.',
       duration: '2021 - 2023',
-      description: 'Completed Advanced Level studies in the Mathematics stream, specializing in Pure Mathematics, Physics and Chemistry.',
+      description: 'Successfully pursued Advanced Level studies in the Mathematics stream, specializing in Pure Mathematics, Physics and Chemistry.',
       results: "Obtained 2 B's for Pure Mathematics and Physics and 1 C for Chemistry."
     },
     {
@@ -31,7 +31,7 @@ const Education = () => {
       institution: "St. Bridget's Convent",
       location: 'Colombo 07, Sri Lanka.',
       duration: '2020 (2021)',
-      description: 'Completed Ordinary Level studies specializing in Mathematics, English, Sinhala, Religion, Western Music, Science, History, Health Science and Commerce.',
+      description: 'Completed Ordinary Level studies with a concentration in Mathematics, English, Sinhala, Religion, Western Music, Science, History, Health Science, and Commerce.',
       results: 'Obtained 6 A grades including English and Mathematics and 3 B grades.'
     }
   ];
