@@ -21,7 +21,7 @@ const Projects = () => {
         description: 'Developed a dynamic real estate website using React, featuring property listings, search filters, and an intuitive user interface for seamless browsing.',
         image: '/assets/Estate Agent.jpg',
         tags: ['React'],
-        link: 'https://github.com/yourusername/ai-content-generator'
+        link: 'https://real-estate-agent-36fae.web.app'
     },
     {
         title: 'Green Steps',
