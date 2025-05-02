@@ -14,7 +14,7 @@ const Projects = () => {
         description: 'Developed a responsive website for a preschool, featuring program details, admissions, gallery and contact information.',
         image: '/assets/Preschool.png',
         tags: ['React'],
-        link: 'https://github.com/binubandara/pre-school-website'
+        link: 'https://lets-grow-preschool.netlify.app/'
     },
     {
         title: 'Real Estate Agent',
